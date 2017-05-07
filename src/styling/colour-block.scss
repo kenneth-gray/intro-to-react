@@ -1,0 +1,23 @@
+$startColour: gold;
+$finishColour: darkorange;
+
+@keyframes example {
+  0% {
+    background-color: $startColour;
+  }
+  100% {
+    background-color: $finishColour;
+  }
+}
+
+.colour-block {
+  height: 200px;
+  width: 200px;
+  background-color: $startColour;
+}
+
+.colour-block:hover {
+  // animation-name: example;
+  // animation-duration: 2s;
+  background-color: $finishColour;
+}

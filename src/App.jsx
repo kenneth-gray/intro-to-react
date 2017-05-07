@@ -3,6 +3,9 @@ import React from 'react'
 // import Version from './versions/Version1'
 // <Version />
 
+// import Colours from './styling/Colours'
+// <Colours />
+
 import styles from './App.scss'
 
 const App = () => (
