@@ -8,6 +8,16 @@ var Counter1 = React.createClass({
     }
   },
 
+  render: function () {
+    var style = { color: this.state.color }
+
+    return (
+      <div style={style}>
+        { this.state.counter }
+      </div>
+    )
+  },
+
   componentDidMount: function () {
     function increaseCounter () {
       this.setState({
@@ -20,16 +30,6 @@ var Counter1 = React.createClass({
 
   componentWillUnmount: function () {
     clearInterval(this.interval)
-  },
-
-  render: function () {
-    var style = { color: this.state.color }
-
-    return (
-      <div style={style}>
-        { this.state.counter }
-      </div>
-    )
   }
 })
 

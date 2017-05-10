@@ -16,18 +16,6 @@ class ColourBlock2 extends Component {
     this.onMouseLeave = this.onMouseLeave.bind(this)
   }
 
-  onMouseEnter () {
-    this.setState({
-      backgroundColor: 'deeppink'
-    })
-  }
-
-  onMouseLeave () {
-    this.setState({
-      backgroundColor: startColour
-    })
-  }
-
   render () {
     const style = {
       ...colourBlockStyle,
@@ -40,6 +28,18 @@ class ColourBlock2 extends Component {
         onMouseLeave={this.onMouseLeave}
       />
     )
+  }
+
+  onMouseEnter () {
+    this.setState({
+      backgroundColor: 'deeppink'
+    })
+  }
+
+  onMouseLeave () {
+    this.setState({
+      backgroundColor: startColour
+    })
   }
 }
 

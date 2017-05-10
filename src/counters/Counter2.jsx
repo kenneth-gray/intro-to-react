@@ -10,6 +10,16 @@ class Counter2 extends Component {
     }
   }
 
+  render () {
+    const style = { color: this.state.color }
+
+    return (
+      <div style={style}>
+        { this.state.counter }
+      </div>
+    )
+  }
+
   componentDidMount () {
     this.interval = setInterval(() => {
       this.setState({
@@ -20,16 +30,6 @@ class Counter2 extends Component {
 
   componentWillUnmount () {
     clearInterval(this.interval)
-  }
-
-  render () {
-    const style = { color: this.state.color }
-
-    return (
-      <div style={style}>
-        { this.state.counter }
-      </div>
-    )
   }
 }
 
