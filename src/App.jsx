@@ -3,11 +3,11 @@ import React from 'react'
 // import Version from './versions/Version1'
 // <Version />
 
-// import Counter from './counters/Counter1'
-// <Counter />
-
 // import UserInfo from './user-info/UserInfo'
 // <UserInfo name='Kenny' email='kgray@example.com' />
+
+// import Counter from './counters/Counter1'
+// <Counter />
 
 // import Colours from './styling/Colours'
 // <Colours />
